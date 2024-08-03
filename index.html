@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encriptador</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+<header>
+  <div class="contenedor">
+    <div class="header_img">
+      <img src="./img/logo.png" alt="Logo de Alura">
+    </div>
+  </div>
+</header>
+<main>
+  <div class="contenedor">
+    <div class="encriptador">
+      <form class="formulario_encriptador">
+        <div class="entrada_de_texto">
+          <textarea name="text_in_area" id="texto" placeholder="Ingrese el texto aquí" required></textarea>
+          <div class="info_de_texto">
+            <div class="info">
+              <p id="alerta">Ingresa solo letras minúsculas sin caracteres especiales</p>
+            </div>
+            <div class="botones_de_texto">
+              <input id="encriptar" type="button" value="Encriptar">
+              <input id="desencriptar" type="button" value="Desencriptar">
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="seccion_de_salida">
+        <div class="contenido_de_salida">
+          <div class="contenido" id="default">
+            <div class="imagen_de_salida">
+              <img src="./img/dibujo_lupa.png" alt="Imagen tipo dibujo de un hombre utilizando una lupa para observar un diamante">
+            </div>
+            <p>Ningún mensaje fue encontrado</p>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+          <div class="contenido invisible" id="result">
+            <textarea name="text_out_area" id="texto_out" disabled></textarea>
+            <button id="copiar">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="pie_de_pagina">
+  <p>Desarrollado por: Sergio Figueroa para Alura Latam - agosto 2024</p>
+</footer>
+</body>
+<script src="./js/App.js"></script>
+</html>
